@@ -28,3 +28,34 @@ Desarrolla un mini compilador que tome una cadena de texto y devuelva otra caden
 
 2. Crea un programa al que le pases como entrada el mensaje anterior. Envía la salida con el comando "submit" en la terminal, por ejemplo así:
 submit 024899488
+
+** Mini Compiler Challenge
+In the world of espionage, a coding language is used with symbols that perform simple mathematical operations.
+
+Your task is to create a mini compiler that interprets and executes programs written in this symbol language.
+
+The operations of the language are as follows:
+
+"#" Increments the numeric value by 1.
+"@" Decrements the numeric value by 1.
+"*" Multiplies the numeric value by itself.
+"&" Prints the current numeric value.
+The initial numeric value is 0 and the operations must be applied in the order in which they appear in the symbol string.
+
+Input examples: ** Input: "##*&" ** Input: "##*&" ** Input: "##*&
+Input: "##*&"
+Expected output: "4".
+Explanation: Increment (1), increment (2), multiply (4), print (4).
+
+Input: "&##&&*&@&"
+Expected output: "0243".
+Explanation: Print (0), increment (1), increment (2), print (2), multiply (4), print (4), decrement (3), print (3).
+
+** Your challenge: **
+Develop a mini compiler that takes a string of text and returns another string of text with the result of running the program.
+
+** How to solve it
+1. Solve the message you will find in this file: https://codember.dev/data/message_02.txt
+
+2. Create a program to which you pass the above message as input. Send the output with the command "submit" in the terminal, for example like this:
+submit 024899488

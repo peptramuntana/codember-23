@@ -32,36 +32,17 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 2.5em;
   line-height: 1.1;
 }
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding-left: 0;
+  list-style: none;
 }
 
 button {
@@ -74,10 +55,15 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  max-width: 250px;
+  text-transform: uppercase;
+  padding: 10px 20px;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -95,3 +81,41 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.compiler {
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: 100px auto;
+  align-items: center;
+  gap: 10px;
+}
+
+.compiler label {
+  margin-right: 20px;
+}
+
+.compiler .spanned {
+  grid-column: 1 / span 2;
+  margin: 0 auto;
+}
+
+.compiler .output {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  height: auto;
+}
+
+.compiler .validation-message {
+  width: 100%;
+  margin-left: 110px;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left;
+}
+
+
