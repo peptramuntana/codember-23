@@ -1,0 +1,11 @@
+{
+  "name": "codember-23",
+  "version": "1.0.0",
+  "description": "Codember.dev",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "linkedin.com/in/jmvicap",
+  "license": "ISC"
+}
